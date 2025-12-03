@@ -1,0 +1,66 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 582142646932753,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotonInicio"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 427053329985551,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				}
+			],
+			"sid": 177385317355613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 132613935065083,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotonReinicio"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 692503998959992,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 119804909464551,
+					"parameters": {
+						"variable": "Variable1"
+					}
+				}
+			],
+			"sid": 735715754122366
+		}
+	],
+	"sid": 656597776534230
+}

@@ -1,0 +1,702 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Variable1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 680808602415919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoPB",
+					"sid": 453712779724581,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_base",
+					"sid": 266747932589488,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 712252562044514
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoGrafica",
+					"sid": 170133322582318,
+					"parameters": {
+						"text": "\"Gráfica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Grafica",
+					"sid": 662586186314295,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 707328600325750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoRam",
+					"sid": 848525169617475,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 289711061819092,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 947947674456957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoDisipador",
+					"sid": 988630500247712,
+					"parameters": {
+						"text": "\"disipador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu_cooler",
+					"sid": 444751243536499,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 453310690334027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoFuenteDeAlimentación",
+					"sid": 937597868310806,
+					"parameters": {
+						"text": "\"fuente de alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "psu",
+					"sid": 265600351318050,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 337268314669602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoProcesador",
+					"sid": 545627237957612,
+					"parameters": {
+						"text": "\"procesador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu",
+					"sid": 933128581958594,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 155887561747821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Placa_base",
+					"sid": 380303198775139,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 717724297193346,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Placa_base",
+							"sid": 238850940417135,
+							"parameters": {
+								"object": "ObjetoVacioPB"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Placa_base",
+							"sid": 413068054859409,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioPB",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 863761835631926,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 771808055897469,
+							"parameters": {
+								"text": "Variable1"
+							}
+						}
+					],
+					"sid": 890067592077228
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 923070023144591
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Placa_base",
+							"sid": 211220309314091,
+							"parameters": {
+								"x": "531.511718",
+								"y": "188.767912"
+							}
+						}
+					],
+					"sid": 266283464392893
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Grafica",
+					"sid": 186901016359931,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 838168349831758,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Grafica",
+							"sid": 905110551876099,
+							"parameters": {
+								"object": "ObjetoVacioGrafica"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Grafica",
+							"sid": 883565083579595,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioGrafica",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 396838788658154,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 504052201643350,
+							"parameters": {
+								"text": "Variable1"
+							}
+						}
+					],
+					"sid": 410961546882537
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 731122197605260
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Grafica",
+							"sid": 610998087220939,
+							"parameters": {
+								"x": "536.132051",
+								"y": "378.845645"
+							}
+						}
+					],
+					"sid": 625589969059247
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "psu",
+					"sid": 164688129599347,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 623205607050550,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "psu",
+							"sid": 865148050415525,
+							"parameters": {
+								"object": "ObjetoVacioFuenteA"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "psu",
+							"sid": 495117806945180,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioFuenteA",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 368005579963706,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 819745150550588,
+							"parameters": {
+								"text": "Variable1"
+							}
+						}
+					],
+					"sid": 263235891115190
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 163512343022886
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "psu",
+							"sid": 143188503266481,
+							"parameters": {
+								"x": "715.154258",
+								"y": "211.943698"
+							}
+						}
+					],
+					"sid": 649074203412600
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "ram",
+					"sid": 831378933746328,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 604058732272821,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ram",
+							"sid": 911803539335413,
+							"parameters": {
+								"object": "ObjetoVacioRam"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 166156575272160,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 449767905942005,
+							"parameters": {
+								"text": "Variable1"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "ram",
+							"sid": 296840851008637,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioRam",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 665748034410197
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 714320644919074
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ram",
+							"sid": 192100847611258,
+							"parameters": {
+								"x": "640.692437",
+								"y": "367.72042"
+							}
+						}
+					],
+					"sid": 430809967613610
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "cpu",
+					"sid": 354399371665925,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 971559695837259,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cpu",
+							"sid": 954145525902497,
+							"parameters": {
+								"object": "ObjetoVacioProcDisi"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 167378663171089,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 554201569013790,
+							"parameters": {
+								"text": "Variable1"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "cpu",
+							"sid": 397553077790919,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioProcDisi",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 662766539440721
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 713980391143443
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cpu",
+							"sid": 179960377052809,
+							"parameters": {
+								"x": "663.107378",
+								"y": "140.085144"
+							}
+						}
+					],
+					"sid": 582132151652061
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "cpu_cooler",
+					"sid": 726002800420061,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 678944979582202,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "cpu_cooler",
+							"sid": 574144345750771,
+							"parameters": {
+								"object": "ObjetoVacioProcDisi"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 231739133522465,
+							"parameters": {
+								"variable": "Variable1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Puntos",
+							"sid": 365243384398166,
+							"parameters": {
+								"text": "Variable1"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "cpu_cooler",
+							"sid": 810949476065622,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoVacioProcDisi",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 267882943603566
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 355343247532948
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cpu_cooler",
+							"sid": 224997314473426,
+							"parameters": {
+								"x": "756.591269",
+								"y": "341.162589"
+							}
+						}
+					],
+					"sid": 989504376041599
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 676440361577142,
+					"parameters": {
+						"variable": "Variable1",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 660652730483111,
+					"parameters": {
+						"layout": "MenuFin"
+					}
+				}
+			],
+			"sid": 899618525140668
+		}
+	],
+	"sid": 733106567159345
+}

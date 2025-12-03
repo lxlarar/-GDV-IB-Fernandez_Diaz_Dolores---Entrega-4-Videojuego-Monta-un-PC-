@@ -1,0 +1,9 @@
+{
+	"name": "EntradaDeTextoGrafica",
+	"plugin-id": "TextBox",
+	"sid": 551006515051731,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

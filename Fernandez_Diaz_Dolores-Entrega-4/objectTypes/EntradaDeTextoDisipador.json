@@ -1,0 +1,9 @@
+{
+	"name": "EntradaDeTextoDisipador",
+	"plugin-id": "TextBox",
+	"sid": 834823139965509,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}
