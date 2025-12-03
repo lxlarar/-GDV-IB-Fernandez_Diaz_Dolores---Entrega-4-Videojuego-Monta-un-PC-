@@ -33,6 +33,14 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoPB",
+					"sid": 883742964486916,
+					"parameters": {
+						"text": "\" \""
+					}
 				}
 			],
 			"sid": 712252562044514
@@ -58,6 +66,14 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoGrafica",
+					"sid": 553109382661482,
+					"parameters": {
+						"text": "\" \""
 					}
 				}
 			],
@@ -85,6 +101,14 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoRam",
+					"sid": 679415881209545,
+					"parameters": {
+						"text": "\" \""
+					}
 				}
 			],
 			"sid": 947947674456957
@@ -110,6 +134,14 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoDisipador",
+					"sid": 680837526822985,
+					"parameters": {
+						"text": "\" \""
 					}
 				}
 			],
@@ -137,6 +169,14 @@
 					"parameters": {
 						"state": "enabled"
 					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoFuenteDeAlimentación",
+					"sid": 873427426137959,
+					"parameters": {
+						"text": "\" \""
+					}
 				}
 			],
 			"sid": 337268314669602
@@ -162,6 +202,14 @@
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "EntradaDeTextoProcesador",
+					"sid": 838386883898852,
+					"parameters": {
+						"text": "\" \""
 					}
 				}
 			],
@@ -223,6 +271,15 @@
 							"parameters": {
 								"text": "Variable1"
 							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Placa_base",
+							"sid": 696946260243011,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
 						}
 					],
 					"sid": 890067592077228
@@ -277,6 +334,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Grafica",
+							"sid": 411896080893621,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
 						{
 							"id": "pin-to-object-imagepoint",
 							"objectClass": "Grafica",
@@ -391,6 +457,15 @@
 							"parameters": {
 								"text": "Variable1"
 							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "psu",
+							"sid": 485363004990226,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
 						}
 					],
 					"sid": 263235891115190
@@ -474,6 +549,15 @@
 								"width-type": "no",
 								"height-type": "no",
 								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ram",
+							"sid": 375428525351852,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
 							}
 						}
 					],
@@ -559,6 +643,15 @@
 								"height-type": "no",
 								"z": false
 							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "cpu",
+							"sid": 225680003572905,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
 						}
 					],
 					"sid": 662766539440721
@@ -642,6 +735,15 @@
 								"width-type": "no",
 								"height-type": "no",
 								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "cpu_cooler",
+							"sid": 568566318900937,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
 							}
 						}
 					],
