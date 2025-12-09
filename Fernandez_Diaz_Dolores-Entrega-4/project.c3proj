@@ -114,8 +114,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1",
 			"MenuInicio",
+			"Escena 1",
 			"MenuFin"
 		],
 		"subfolders": []
