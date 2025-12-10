@@ -620,8 +620,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 123.64069713245661,
-						"y": 9.312716223976821,
+						"x": 123.818,
+						"y": 7.659823661993357,
 						"width": 617.2727272727279,
 						"height": 38.18181818181819,
 						"originX": 0,
@@ -673,8 +673,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 4.549788041547373,
-						"y": 42.0399889512496,
+						"x": 4.727,
+						"y": 40.387096389266134,
 						"width": 844.5454545454555,
 						"height": 38.18181818181819,
 						"originX": 0,
@@ -1174,7 +1174,7 @@
 						"text": "0",
 						"enable-bbcode": true,
 						"font": "Century Gothic",
-						"size": 40,
+						"size": 38,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -1205,10 +1205,116 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 738.8428516230309,
-						"y": 5.785356316684698,
+						"x": 143.80152930898146,
+						"y": 7.438248878668176,
 						"width": 214.87603305785126,
 						"height": 68.01652892561985,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto",
+					"properties": {
+						"text": "Placa Base\nGráfica\nFuente de alimentación\nProcesador\nDisipador\nRAM",
+						"enable-bbcode": true,
+						"font": "Century Gothic",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "right",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 77,
+					"sid": 890061677544082,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 890061677544082,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 648.8461038416082,
+						"y": 2.478880795565516,
+						"width": 200,
+						"height": 146.5289256198347,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto3",
+					"properties": {
+						"text": "Puntos:",
+						"enable-bbcode": true,
+						"font": "Century Gothic",
+						"size": 19,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 78,
+					"sid": 375784837752498,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 375784837752498,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 25.705603378863344,
+						"y": 31.4044935053045,
+						"width": 200,
+						"height": 58.09917355371901,
 						"originX": 0,
 						"originY": 0,
 						"color": [
