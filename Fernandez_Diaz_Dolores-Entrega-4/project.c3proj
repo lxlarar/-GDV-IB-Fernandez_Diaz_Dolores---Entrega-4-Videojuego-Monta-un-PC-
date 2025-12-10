@@ -101,7 +101,9 @@
 			"Texto2",
 			"BotonInicio",
 			"Puntos",
-			"BotonReinicio"
+			"BotonReinicio",
+			"Texto",
+			"Texto3"
 		],
 		"subfolders": []
 	},
